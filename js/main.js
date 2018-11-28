@@ -1,16 +1,18 @@
-let btnRemove = document.getElementById('remove');
-let btnAdd = document.getElementById('add');
 
-function addRemoveButton() {
-    if (btnRemove.style.display !== 'none') {
-        btnRemove.style.display = 'none';
+function addItem(event) {
+    let removeButton = event.target.parentElement.getElementsByClassName('btn-remove')[0];
+
+    if (removeButton.style.display !== 'none') {
+        removeButton.style.display = 'none';
     }
     else {
-        btnRemove.style.display = 'inline-block';
+        removeButton.style.display = 'inline-block';
     }
 }
 
-function removeButton() {
-    btnAdd.remove();
-    btnRemove.style.display = 'none';
+function removeItem(event) {
+    let removeButton = event.target.parentElement.getElementsByClassName('btn-remove')[0];
+    let removeAll = event.target.parentElement.getElementsByClassName('btn-add')[0];
+    removeAll.remove();
+    removeButton.style.display = 'none';
 }
