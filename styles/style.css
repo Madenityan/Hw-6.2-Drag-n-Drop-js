@@ -1,0 +1,34 @@
+.wrapper-img {
+    width: 530px;
+    height: 350px;
+    margin: 50px auto;
+}
+
+.wrapper-img div {
+    background: url("../img/nature.jpeg") center no-repeat;
+    width: 530px;
+    height: 350px;
+    position: relative;
+}
+
+.wrapper-button {
+    position: absolute;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-first {
+    background-color: #ff4500;
+    padding: 10px;
+    color: #ffff;
+    opacity: 0.7;
+}
+
+.btn-remove {
+    display: none;
+}
+
