@@ -1,4 +1,3 @@
-
 function addItem(event) {
     let removeButton = event.target.parentElement.getElementsByClassName('btn-remove')[0];
 
@@ -15,4 +14,14 @@ function removeItem(event) {
     let removeAll = event.target.parentElement.getElementsByClassName('btn-add')[0];
     removeAll.remove();
     removeButton.style.display = 'none';
+}
+
+
+function moving(event) {
+    let wrapper = event.target;
+    console.log(wrapper);
+    
+
+
+
 }
