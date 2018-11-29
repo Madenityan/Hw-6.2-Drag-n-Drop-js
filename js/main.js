@@ -16,11 +16,32 @@ function removeItem(event) {
     removeButton.style.display = 'none';
 }
 
+function transfer(event) {
+    let wrapper = event.currentTarget.children[0];
+    let parent = event.target.parentElement.getBoundingClientRect();
+    if (wrapper.getAttribute('btn_clicked')) {
+        console.log(event, parent);
+        wrapper.style.left = event.pageX - wrapper.offsetWidth / 2 + 'px';
+        wrapper.style.top = event.pageY - wrapper.offsetHeight/ 2 + 'px';
+    }
+}
 
+// onmousemove
+function onMouseMove(event) {
+    transfer(event);
+}
+
+// onmousedown
 function moving(event) {
-    let wrapper = event.target;
-    console.log(wrapper);
+    let wrapper = event.target.parentElement;
+    wrapper.setAttribute('btn_clicked', 'true');
+}
 
+// onmouseup
+function stopMove(event) {
+    let wrapper = event.currentTarget.children[0];
+    wrapper.removeAttribute('btn_clicked');
+}
 
 
 
