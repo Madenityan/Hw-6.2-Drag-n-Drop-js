@@ -4,14 +4,14 @@
     margin: 50px auto;
 }
 
-.wrapper-img div:first-child {
+.container-item {
     background: url("../img/nature.jpeg") center no-repeat;
     width: 530px;
     height: 350px;
     position: relative;
 }
 
-.wrapper-button {
+.wrapper-item {
     position: absolute;
 }
 
