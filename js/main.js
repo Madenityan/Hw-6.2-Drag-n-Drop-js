@@ -20,7 +20,7 @@ function removeItem(event) {
 function moving(event) {
     let wrapper = event.target;
     console.log(wrapper);
-    
+
 
 
 
