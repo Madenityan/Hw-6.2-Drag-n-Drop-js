@@ -6,12 +6,10 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<div class="wrapper-img">
-    <div class="container-item">
-        <div class="wrapper-item" onmousedown="moving(event)">
-            <button class="btn btn-first btn-add" onclick="addItem(event)">click me</button>
-            <button class="btn-remove" onclick="removeItem(event)">X</button>
-        </div>
+<div class="wrapper-img" onmousemove="onMouseMove(event)" onmouseup="stopMove(event)">
+    <div class="wrapper-item">
+        <button class="btn btn-first btn-add" onmousedown="moving(event)" onclick="addItem(event)"  >click me</button>
+        <button class="btn-remove" onclick="removeItem(event)">X</button>
     </div>
 </div>
 <script src="js/main.js"></script>

@@ -1,14 +1,22 @@
+body {
+    margin: 0 !important;;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
 .wrapper-img {
     width: 530px;
     height: 350px;
-    margin: 50px auto;
+    background: url("../img/nature.jpeg") center no-repeat;
+    position: relative;
 }
 
 .container-item {
-    background: url("../img/nature.jpeg") center no-repeat;
     width: 530px;
     height: 350px;
-    position: relative;
 }
 
 .wrapper-item {
@@ -32,3 +40,6 @@
     display: none;
 }
 
+.btn-add {
+    cursor: grab;
+}
