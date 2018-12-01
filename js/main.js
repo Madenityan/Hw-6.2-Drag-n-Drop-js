@@ -18,11 +18,11 @@ function removeItem(event) {
 
 function transfer(event) {
     let wrapper = event.currentTarget.children[0];
-    let parent = event.target.parentElement.getBoundingClientRect();
+    let leftOffset = event.currentTarget.offsetLeft;
+    let topOffset = event.currentTarget.offsetTop;
     if (wrapper.getAttribute('btn_clicked')) {
-        console.log(event, parent);
-        wrapper.style.left = event.pageX - wrapper.offsetWidth / 2 + 'px';
-        wrapper.style.top = event.pageY - wrapper.offsetHeight/ 2 + 'px';
+        wrapper.style.left = event.pageX - (wrapper.offsetWidth / 2) - leftOffset + 'px';
+        wrapper.style.top = event.pageY - (wrapper.offsetHeight/ 2) - topOffset + 'px';
     }
 }
 
@@ -41,8 +41,4 @@ function moving(event) {
 function stopMove(event) {
     let wrapper = event.currentTarget.children[0];
     wrapper.removeAttribute('btn_clicked');
-}
-
-
-
 }

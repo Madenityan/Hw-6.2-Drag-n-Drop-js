@@ -3,15 +3,17 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
     justify-content: center;
-
+    align-items: center;
 }
+
 .wrapper-img {
     width: 530px;
     height: 350px;
+    margin-top: 150px;
     background: url("../img/nature.jpeg") center no-repeat;
     position: relative;
+    overflow: hidden;
 }
 
 .container-item {
@@ -21,6 +23,8 @@ body {
 
 .wrapper-item {
     position: absolute;
+    top: 37%;
+    left: 43%;
 }
 
 .btn {
